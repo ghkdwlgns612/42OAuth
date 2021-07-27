@@ -1,0 +1,16 @@
+#box{
+    display : flexbox;
+    flex-direction : column;
+    position : absolute;
+    top : 45%; left : 45%;
+
+}
+
+.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: black 1px solid;
+    text-decoration: none;
+    color: initial;
+}

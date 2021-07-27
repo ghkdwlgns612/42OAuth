@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/css/render.css">
+</head>
+<body id="box">
+    <div id="form">
+        <table border="1" id="table">
+            <th >정보</th>
+            <th>내용</th>
+            <tr>
+                <td>grade</td>
+                <td th:text="${user.grade}"></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td th:text="${user.name}"></td>
+            </tr>
+            <tr>
+                <td>level</td>
+                <td th:text="${user.level}"></td>
+            </tr>
+            <tr>
+                <td>blackhole</td>
+                <td th:text="${user.blackholed_at}"></td>
+            </tr>
+        </table>
+<!--        <div class="inform">등급<p th:text="${user.grade}"></p></div><br>-->
+<!--        <div class="inform">인트라ID<p th:text="${user.name}"></p></div><br>-->
+<!--        <div class="inform">레벨<p th:text="${user.level}"></p></div><br>-->
+<!--        <div class="inform">블랙홀<p th:text="${user.blackholed_at}"></p></div><br>-->
+    </div>
+</body>
+</html>
