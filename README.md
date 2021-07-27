@@ -6,7 +6,7 @@
 git clone https://github.com/ghkdwlgns612/42OAuth.git
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d43c3f92-9a95-4141-917d-4f76a9f46d94/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d43c3f92-9a95-4141-917d-4f76a9f46d94/Untitled.png)
+![image](https://user-images.githubusercontent.com/68694844/127138681-73297c3b-af47-450a-b6ab-0482bc9bd38e.png)
 
 
 ### 1. java/ouath/OAuth/Application.java에서 main run하여 서버 가동.
