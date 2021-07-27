@@ -20,20 +20,20 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @Controller
-public class UserController extends HttpServlet {
+public class UserController {
 
     private final Make make;
     private final Parse parse;
     ObjectMapper objectMapper = new ObjectMapper();
     TokenDto tokenDto = new TokenDto();
 
-    @Autowired
+    @Autowired //두 개의 객체는 SpringConfig에서 컨테이너가 주입.
     public UserController(Make make, Parse parse) {
         this.make = make;
         this.parse = parse;
     }
 
-    @GetMapping("/login")
+    @GetMapping("/login") //code는 42서울서버가 보내주는 인증코드, error필드는 인증이 안될경우 포함됨.
     public String login(@RequestParam(required = false) String code,
                         @RequestParam(required = false) String error) throws IOException {
         if (error != null)
