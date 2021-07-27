@@ -9,7 +9,7 @@ git clone https://github.com/ghkdwlgns612/42OAuth.git
 ![image](https://user-images.githubusercontent.com/68694844/127138681-73297c3b-af47-450a-b6ab-0482bc9bd38e.png)
 
 
-### 1. java/ouath/OAuth/Application.java에서 main run하여 서버 가동. 또는 42OAuth파일 내 42OAuth-0.0.1-SNAPSHOT.jar파일을 커맨드 창에서 가동. 
+### 1. java/ouath/OAuth/Application.java에서 main run하여 서버 가동. 또는 42OAuth파일 내 42OAuth-0.0.1-SNAPSHOT.jar파일을 커맨드 창에서 가동.(주의사항은 java version은 11이여야한다.)
 
 ![image](https://user-images.githubusercontent.com/68694844/127135281-bdc2ad63-dd3d-48fb-95ee-0a15e5f1eaa7.png)
 ![image](https://user-images.githubusercontent.com/68694844/127165435-ed44751f-353c-4fa5-971e-90b126bb8e52.png)
