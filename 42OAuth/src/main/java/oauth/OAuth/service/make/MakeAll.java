@@ -7,7 +7,8 @@ import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
 public class MakeAll implements Make{
-    @Override
+    
+    @Override //42API JSON정보를 받아와 필요한 정보만 저장하는 기능.
     public UserDto makeUserDto(JsonNode jsonNode) {
         UserDto userDto = new UserDto(jsonNode.get(0).get("grade").asText()
                 , jsonNode.get(0).get("level").asDouble()
@@ -16,7 +17,7 @@ public class MakeAll implements Make{
         return userDto;
     }
 
-    @Override
+    @Override //42API를 얻기 위해서 POST방식으로 ACCESS_TOKEN을 접근시켜 JSON을 STRING형태로 얻어오는 기능.
     public ResponseEntity<String> makeAPI(String username, TokenDto tokenDto) {
         String queryString = "https://api.intra.42.fr/v2/users/" + username + "/cursus_users?access_token=" + tokenDto.getAccess_token();
         HttpHeaders httpHeaders = new HttpHeaders();
@@ -27,7 +28,7 @@ public class MakeAll implements Make{
         return resp;
     }
 
-    @Override
+    @Override //인증 코드를 이용하여 ACCESS_TOKEN을 만드는 작업.
     public ResponseEntity<String> makeToken(String code) {
         String queryString = ""
                 + "grant_type=" + "authorization_code" + "&"
