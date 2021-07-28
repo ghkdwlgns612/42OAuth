@@ -19,7 +19,7 @@ public class ParseAll implements Parse{
         this.make = make;
     }
 
-    @Override
+    @Override //STRING을 JSON으로 바꾸어 리턴.
     public JsonNode parseJsonNode(HttpServletRequest request, ObjectMapper objectMapper, TokenDto tokenDto) throws JsonProcessingException {
         String username = request.getParameter("username");
         ResponseEntity<String> resp = make.makeAPI(username,tokenDto);
